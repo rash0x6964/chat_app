@@ -2,6 +2,11 @@ body{
 	font-family: 'Nunito Sans';
 }
 
+#container {
+	display: flex;
+	gap: 10px;
+}
+
 h2{
 	font-size: 18px;
 	padding: 10px 20px;
@@ -9,8 +14,9 @@ h2{
 }
 
 #mario-chat{
+	flex-grow: 1;
 	max-width: 600px;
-	margin: 30px auto;
+	/* margin: 30px auto; */
 	border: 1px solid #ddd;
 	box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
 	border-radius: 2px;
@@ -67,3 +73,27 @@ button{
 	width: 100%;
 	border-radius: 0 0 2px 2px;
 }
+
+
+fieldset {
+	width: 200px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+fieldset > div {
+	display: flex;
+	align-items: center;
+}
+
+fieldset > div > input {
+	padding: 40px;
+	width: 15px;
+}
+
+fieldset > div > span {
+	color: #575ed8;
+}
+

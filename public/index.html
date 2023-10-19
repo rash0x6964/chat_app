@@ -10,9 +10,30 @@
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
-
+      <div id="container">
+        <fieldset>
+          <legend>Select a room:</legend>
+          <div>
+            <input type="radio" id="room1" name="room" value="room1" checked />
+            <label for="room1">room1</label>
+            <span id="state_room1">not joined</span>
+          </div>
+          <div>
+            <input type="radio" id="room2" name="room" value="room2" />
+            <label for="room2">room2</label>
+            <span id="state_room2">not joined</span>
+          </div>
+          <div>
+            <input type="radio" id="room3" name="room" value="room3" />
+            <label for="room3">room3</label>
+            <span id="state_room3">not joined</span>
+          </div>
+          <button id="joinRoom">join room</button>
+          <button id="leaveRoom">leave room</button>
+        </fieldset>
         <div id="mario-chat">
-            <h2>Mario Chat</h2>
+            <h2 id="clientID"></h2>
+            <h2 id="chatTitle">Mario Chat</h2>
             <div id="chat-window">
                 <div id="output"></div>
                 <div id="feedback"></div>
@@ -21,7 +42,7 @@
             <input id="message" type="text" placeholder="Message" />
             <button id="send">Send</button>
         </div>
-
+      </div>
     </body>
-    <script src="/chat.js"></script>
+    <script src="chat.js"></script>
 </html>
